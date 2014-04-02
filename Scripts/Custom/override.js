@@ -1,7 +1,25 @@
+var topOffset = 170;
+
 //dom ready functions
 $(function(){
   insert_login()
   insert_top();
+});
+
+
+$(window).scroll(function(){
+  var table_width = $('.activity-data-table').width();
+  var table_left_position = $('.activity-data-table').position() + 203;
+  var column_width_1 = $('.activity-data-table tr:first-child td').attr('colspan');
+  if  ($(window).scrollTop() >= 330){
+      var cloned_header = $('.activity-data-table thead').clone().addClass('cloned-header');
+       // $(cloned_header).removeClass('hidden').insertAfter('table.activity-data-table').css({left:table_left_position.left, width:table_width });
+       $(cloned_header).removeClass('hidden').insertAfter('table.activity-data-table').css({ width:table_width });
+       // $(cloned_header).removeClass('hidden').insertAfter('table.activity-data-table');
+  }
+  if  ($(window).scrollTop() <= 329){
+       $('.cloned-header').remove();
+    }
 });
 
 function clear_saved_state() {

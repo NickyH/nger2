@@ -861,6 +861,14 @@ li.active {
 // table styling
 
 .activity-data-table {
+  tr th {
+    background-color: @top-bar-colour !important;
+    color: white !important;
+    padding-bottom: 5px;
+  }
+  thead {
+    border-radius: 5px;
+  }
   .form-control {
     height: 28px !important;
     margin-top: 5px;
@@ -869,9 +877,51 @@ li.active {
     margin-top: 10px;
   }
   tr{
-    height: 35px;
+    height: 25px;
+  }
+  .form-group {
+    margin-bottom: 5px;
   }
 }
+
+.cloned-header {
+  position: fixed;
+  top: 170px;
+  &.hidden {
+    display: none;
+  }
+  tr th {
+    background-color: @top-bar-colour !important;
+    color: white !important;
+    padding-bottom: 5px;
+  }
+  // table column widths
+  .tbl-edit {
+    width: 2%;
+  }
+  .tbl-activity {
+    width: 20%;
+  }
+  .tbl-invoice {
+    width: 15%;
+  }
+  .tbl-estimate {
+    width: 10%;
+  }
+  .tbl-measure {
+    width: 10%;
+  }
+  .tbl-unit {
+    width: 2%;
+  }
+  .tbl-total {
+    width: 3%;
+  }
+  .tbl-comments {
+    // width:20%;
+  }
+}
+
 
 .table-header {
   position: relative;
@@ -964,13 +1014,14 @@ li.active {
 }
 
 .time-header {
-  background-color: lighten(@form-highlight-colour, 20%) !important;
-  border-bottom: 1px solid @form-highlight-colour;
-  font-size: 14px;
+  background-color: darken(@form-highlight-colour, 5%) !important;
+  color: @white;
+  font-size: 15px;
   text-indent: 20px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .facility-list-table {
