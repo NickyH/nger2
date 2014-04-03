@@ -890,35 +890,16 @@ li.active {
   &.hidden {
     display: none;
   }
+  th {
+    padding: 5px;
+  }
   tr th {
     background-color: @top-bar-colour !important;
     color: white !important;
-    padding-bottom: 5px;
+    vertical-align: bottom;
   }
-  // table column widths
-  .tbl-edit {
-    width: 2%;
-  }
-  .tbl-activity {
-    width: 20%;
-  }
-  .tbl-invoice {
-    width: 15%;
-  }
-  .tbl-estimate {
-    width: 10%;
-  }
-  .tbl-measure {
-    width: 10%;
-  }
-  .tbl-unit {
-    width: 2%;
-  }
-  .tbl-total {
-    width: 3%;
-  }
-  .tbl-comments {
-    // width:20%;
+  tr:first-child th {
+    border-bottom: 1px solid @top-bar-colour !important;
   }
 }
 
@@ -928,7 +909,7 @@ li.active {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background-color: @grey-dark;
+  background-color: #ea9c1f;
   color: @white;
   font-size: 16px;
   text-indent: 50px;
