@@ -36,13 +36,12 @@ $(window).scroll(function(){
       $(cloned_header).insertAfter('table.activity-data-table').css({ width:table_width }).delay(1000).removeClass('hidden');
   }
   if  ($(window).scrollTop() <= 329){
-       $('.cloned-header').remove();
+      $('.cloned-header').remove();
     }
 });
 
 function clear_saved_state() {
   console.log('clear');
-
 }
 
 function insert_login() {
@@ -204,7 +203,6 @@ function nav_button_leave() {
         }
     };
 })(jQuery);
-
 
 
 function insert_left() {

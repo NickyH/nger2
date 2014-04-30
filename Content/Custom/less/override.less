@@ -571,7 +571,7 @@ li.active {
     height: 100%;
     width: 100%;
     padding-left: 240px;
-    padding-top: 170px;
+    padding-top: 150px;
     background-color: @background-main;
     }
   }
@@ -631,12 +631,12 @@ li.active {
       position: absolute;
       left: 0;
       top: 10px;
-      width: 40px;
+      width: 30px;
       margin-right: 30px;
       border-radius: 2px;
     }
     span {
-      line-height: 60px;
+      line-height: 50px;
       font-weight: regular;
       font-size: 18px;
       color: @grey-medium-dark;
@@ -645,7 +645,6 @@ li.active {
     padding-left: 40px;
     position: relative;
     left: 240px;
-    margin-top: 10px;
     display: inline-block;
     font: @form-header-font;
     font-weight: bold;
@@ -674,7 +673,7 @@ li.active {
   width: 100%;
   display: block;
   float: right;
-  height: 70px;
+  height: 50px;
   position: fixed;
   top: 100px;
   right: 0;
@@ -682,15 +681,15 @@ li.active {
   z-index: 3;
     .form-button {
     float: right;
-    height: 40px;
-    min-width: 160px;
-    -webkit-border-radius: 20px;
+    height: 35px;
+    min-width: 140px;
+    -webkit-border-radius: 8px;
     box-shadow: 2px 2px 2px @grey-medium;
     -webkit-box-shadow: 2px 2px 2px @grey-medium;
     border: 1px solid @grey-medium;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 6px;
     margin-bottom: 10px;
     margin-right: 20px;
     font: @form-button-font;
@@ -713,13 +712,13 @@ li.active {
 .form-column {
     .form-button {
     float: right;
-    height: 40px;
-    min-width: 160px;
-    -webkit-border-radius: 20px;
+    height: 35px;
+    min-width: 140px;
+    -webkit-border-radius: 8px;
     box-shadow: 2px 2px 2px @grey-medium;
     -webkit-box-shadow: 2px 2px 2px @grey-medium;
     border: 1px solid @grey-medium;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-left: 20px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -828,6 +827,7 @@ li.active {
 // tab styling
 
 .nav-tabs {
+  height: 35px;
   li {
     a {
       background-color: lighten(@form-highlight-colour, 32%);
@@ -877,7 +877,9 @@ li.active {
     margin-top: 10px;
   }
   tr{
-    height: 25px;
+    td {
+      padding: 0 !important;
+    }
   }
   .form-group {
     margin-bottom: 5px;
@@ -886,7 +888,7 @@ li.active {
 
 .cloned-header {
   position: fixed;
-  top: 170px;
+  top: 150px;
   &.hidden {
     display: none;
   }
@@ -995,6 +997,7 @@ li.active {
 }
 
 .time-header {
+  height: 25px;
   background-color: darken(@form-highlight-colour, 5%) !important;
   color: @white;
   font-size: 15px;
@@ -1003,6 +1006,9 @@ li.active {
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
+  .text {
+    margin-top: 0;
+  }
 }
 
 .facility-list-table {
