@@ -267,6 +267,7 @@ li.active a.login-select.inactive {
 .left-bar {
   -ms-overflow-style: none;
   /*auto | none | scrollbar | -ms-autohiding-scrollbar*/
+
   width: 220px;
   background: #cccccc;
   position: fixed;
@@ -356,8 +357,10 @@ li.active a.login-select.inactive {
   transform: scaleX(-1);
   -ms-filter: fliph;
   /*IE*/
+
   filter: fliph;
   /*IE*/
+
 }
 .pages-icons {
   width: 120px;
@@ -505,13 +508,16 @@ li.active a.login-select.inactive {
 #details-page {
   background-color: #f2f2f2;
 }
+.container {
+  max-width: 98% !important;
+}
 .container-fluid.form-container {
   display: inline;
   float: right;
   height: 100%;
   width: 100%;
   padding-left: 240px;
-  padding-top: 170px;
+  padding-top: 150px;
   background-color: #f2f2f2;
 }
 .form-panel {
@@ -553,10 +559,12 @@ li.active a.login-select.inactive {
 }
 :-moz-placeholder {
   /* Firefox 18- */
+
   font-family: 'Arial', Helvetica, sans-serif;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
+
   font-family: 'Arial', Helvetica, sans-serif;
 }
 :-ms-input-placeholder {
@@ -566,7 +574,7 @@ li.active a.login-select.inactive {
   width: 100%;
   display: block;
   float: right;
-  height: 70px;
+  height: 50px;
   position: fixed;
   top: 100px;
   right: 0;
@@ -577,7 +585,6 @@ li.active a.login-select.inactive {
   padding-left: 40px;
   position: relative;
   left: 240px;
-  margin-top: 10px;
   display: inline-block;
   font: 22px 'Arial', Helvetica, sans-serif;
   font-weight: bold;
@@ -586,12 +593,12 @@ li.active a.login-select.inactive {
   position: absolute;
   left: 0;
   top: 10px;
-  width: 40px;
+  width: 30px;
   margin-right: 30px;
   border-radius: 2px;
 }
 .form-buttons .form-title span {
-  line-height: 60px;
+  line-height: 50px;
   font-weight: regular;
   font-size: 18px;
   color: #828282;
@@ -634,7 +641,7 @@ li.active a.login-select.inactive {
   border: 1px solid #cccccc;
   border-radius: 8px;
   margin-left: 20px;
-  margin-top: 15px;
+  margin-top: 6px;
   margin-bottom: 10px;
   margin-right: 20px;
   font: 16px 'Arial', Helvetica, sans-serif;
@@ -771,6 +778,9 @@ li.active a.login-select.inactive {
   line-height: 12px !important;
   text-align: right;
 }
+.nav-tabs {
+  height: 35px;
+}
 .nav-tabs li a {
   background-color: #f3faf9;
   border-bottom-color: #ffffff !important;
@@ -809,15 +819,15 @@ li.active a.login-select.inactive {
 .activity-data-table .text {
   margin-top: 10px;
 }
-.activity-data-table tr {
-  height: 25px;
+.activity-data-table tr td {
+  padding: 0 !important;
 }
 .activity-data-table .form-group {
   margin-bottom: 5px;
 }
 .cloned-header {
   position: fixed;
-  top: 170px;
+  top: 150px;
 }
 .cloned-header.hidden {
   display: none;
@@ -897,7 +907,7 @@ li.active a.login-select.inactive {
   color: #828282;
 }
 .tbl-edit {
-  width: 2%;
+  width: 4%;
 }
 .tbl-activity {
   width: 20%;
@@ -909,7 +919,7 @@ li.active a.login-select.inactive {
   width: 10%;
 }
 .tbl-measure {
-  width: 10%;
+  width: 7%;
 }
 .tbl-unit {
   width: 2%;
@@ -917,7 +927,17 @@ li.active a.login-select.inactive {
 .tbl-total {
   width: 3%;
 }
+.tbl-scope1 {
+  width: 8%;
+}
+.tbl-scope2 {
+  width: 8%;
+}
+.tbl-tj {
+  width: 8%;
+}
 .time-header {
+  height: 25px;
   background-color: #6bc6b6 !important;
   color: #ffffff;
   font-size: 15px;
@@ -926,6 +946,9 @@ li.active a.login-select.inactive {
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
+}
+.time-header .text {
+  margin-top: 0;
 }
 .facility-list-table .form-control {
   height: 28px !important;

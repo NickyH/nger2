@@ -560,9 +560,9 @@ li.active {
   background-color: @form-background-colour-light;
 }
 
-// .container {
-//   max-width: 1500px !important;
-// }
+.container {
+  max-width: 98% !important;
+}
 
 .container-fluid {
   &.form-container {
@@ -607,6 +607,9 @@ li.active {
     min-height: 50px;
     padding: 20px;
     margin: 10px auto 10px 30px;
+  }
+  &.fixed-min {
+    min-width: 1600px;
   }
 }
 
@@ -861,6 +864,8 @@ li.active {
 // table styling
 
 .activity-data-table {
+  min-width: 1500px;
+  table-layout: fixed;
   tr th {
     background-color: @top-bar-colour !important;
     color: white !important;
@@ -875,6 +880,7 @@ li.active {
   }
   .text {
     margin-top: 10px;
+    margin-left: 7px;
   }
   tr{
     td {
@@ -904,7 +910,6 @@ li.active {
     border-bottom: 1px solid @top-bar-colour !important;
   }
 }
-
 
 .table-header {
   position: relative;
@@ -971,30 +976,45 @@ li.active {
 }
 
 // table column widths
-.tbl-edit {
-  width: 2%;
-}
-.tbl-activity {
-  width: 20%;
-}
-.tbl-invoice {
-  width: 15%;
-}
-.tbl-estimate {
-  width: 10%;
-}
-.tbl-measure {
-  width: 10%;
-}
-.tbl-unit {
-  width: 2%;
-}
-.tbl-total {
+th {
+  &.tbl-edit {
   width: 3%;
+  }
+  &.tbl-activity {
+    width: 18%;
+  }
+  &.tbl-variance {
+    width: 8%;
+  }
+  &.tbl-invoice {
+    width: 8%;
+  }
+  &.tbl-estimate {
+    width: 8%;
+  }
+  &.tbl-measure {
+    width: 9%;
+  }
+  &.tbl-unit {
+    width: 4%;
+  }
+  &.tbl-total {
+    width: 6%;
+  }
+  &.tbl-comments {
+    // width:20%;
+  }
+  &.tbl-scope1 {
+    width: 5%;
+  }
+  &.tbl-scope2 {
+    width: 5%;
+  }
+  &.tbl-tj {
+    width: 7%;
+  }
 }
-.tbl-comments {
-  // width:20%;
-}
+
 
 .time-header {
   height: 25px;
