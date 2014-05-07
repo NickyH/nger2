@@ -5,6 +5,7 @@ $(function(){
   $( '.form-horizontal .container' ).parsley( 'validate');
   $('.selectpicker').selectpicker({ size: 5 });
   $('.activity-table-search').on('keyup', get_val_table_ID);
+  $('.input-group-addon').on('click', calendar_icon_click); //activate calendar on icon click
 });
 
 function toggle_tab_year() {
@@ -163,3 +164,14 @@ $('.insert-picker').datetimepicker({
       forceParse: 0,
     showMeridian: 1
 });
+
+// set today's date for all date fields
+var today_datetime = moment().format('YYYY-MM-DD HH:mm');
+$(".insert-picker").val(today_datetime);
+
+var today_date = moment().format('YYYY-MM-DD');
+$(".insert-date-picker").val(today_date);
+
+function calendar_icon_click() {
+  $(this).parent().children('.form-control').datetimepicker('show');
+}

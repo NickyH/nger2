@@ -833,6 +833,15 @@ li.active a.login-select.inactive {
 .activity-data-table .form-group {
   margin-bottom: 5px;
 }
+#dummy-table {
+  position: fixed;
+  top: 150px;
+  margin-top: 0;
+  z-index: 2;
+}
+#dummy-table .relative {
+  position: relative;
+}
 .cloned-header {
   position: fixed;
   top: 150px;
@@ -863,6 +872,7 @@ li.active a.login-select.inactive {
   border-bottom: 1px solid #7dcdbf;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  margin-top: 30px;
 }
 .table-header span {
   line-height: 30px;
