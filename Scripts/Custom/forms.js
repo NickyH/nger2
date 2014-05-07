@@ -112,6 +112,7 @@ function table_search(thisObj, tableID) {
       return !reg.test(text);
   }).hide();
   $('thead tr').show();
+  $('.time-header').closest('tr').show();
 }
 
 // function search_facility_list(thisObj, tableID, column) {

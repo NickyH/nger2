@@ -89,6 +89,25 @@
                   </div>
                 </div>
 
+                <table id="dummy-table" class="table table-condensed activity-data-table hidden">
+                  <thead>
+                    <tr>
+                      <th class="tbl-edit"></th>
+                      <th class="tbl-activity">Activity Type</th>
+                      <th class="tbl-variance">Variance</th>
+                      <th class="tbl-invoice">Consumption Invoice/Fuel Card/Delivery Records</th>
+                      <th class="tbl-estimate">Consumption Estimated</th>
+                      <th class="tbl-measure">Consumption Direct Measure</th>
+                      <th class="tbl-unit">Unit of Measure</th>
+                      <th class="tbl-total">Total Consumption</th>
+                      <th class="tbl-comments">Reference/Comments</th>
+                      <th class="tbl-scope1">Scope 1 ktCO2e</th>
+                      <th class="tbl-scope2">Scope 2 ktCO2e</th>
+                      <th class="tbl-tj">Energy Consumption Tj</th>
+                    </tr>
+                  </thead>
+                </table>
+
                 <!-- each searchable table needs unique ID "table-filter-*" -->
                 <table id="table-filter-1" class="table table-condensed activity-data-table">
                   <thead>
@@ -5534,4 +5553,5 @@
   $('ul.nav-tabs.period li a').on('click', toggle_tab_period);
   $('ul.nav-tabs.category li a').on('click', toggle_tab_category);
   $('.time-header').on('click', toggle_time_group);
+  hide_time_groups();
 </script>

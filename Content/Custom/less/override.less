@@ -892,6 +892,16 @@ li.active {
   }
 }
 
+#dummy-table {
+  position: fixed;
+  top: 150px;
+  margin-top: 0;
+  z-index: 2;
+  .relative {
+    position: relative;
+  }
+}
+
 .cloned-header {
   position: fixed;
   top: 150px;
@@ -923,6 +933,7 @@ li.active {
   border-bottom: 1px solid @form-highlight-colour;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  margin-top: 30px;
   span {
     line-height: 30px;
     margin-bottom: 20px;
@@ -1015,7 +1026,6 @@ th {
   }
 }
 
-
 .time-header {
   height: 25px;
   background-color: darken(@form-highlight-colour, 5%) !important;
@@ -1029,6 +1039,14 @@ th {
   .text {
     margin-top: 0;
   }
+}
+
+.time-header:hover {
+  background-color: darken(@form-highlight-colour, 10%) !important;
+}
+
+.time-header:active {
+  background-color: darken(@form-highlight-colour, 20%) !important;
 }
 
 .facility-list-table {
