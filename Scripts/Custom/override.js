@@ -10,27 +10,15 @@ $(function(){
 var timer;
 var fired = false;
 $(window).scroll(function() {
-  if(timer) {
-    window.clearTimeout(timer);
-  }
-
-  timer = window.setTimeout(function() {
     if  ($(window).scrollTop() >= 330 && fired === false || $(window).scrollLeft() ){
       $('#dummy-table').removeClass('hidden');
     }
-
     if ($(window).scrollLeft() ){
-      // $('#dummy-table').addClass('relative');
-      console.log($(window).scrollLeft());
       $('#dummy-table').css('left', 320-$(window).scrollLeft() )
     }
-
     if  ($(window).scrollTop() <= 329){
-      // $('.cloned-header').remove();
-      // fired = false;
       $('#dummy-table').addClass('hidden');
     }
-  }, 10);
 });
 
 function clear_saved_state() {
