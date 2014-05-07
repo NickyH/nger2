@@ -6,33 +6,6 @@ $(function(){
   insert_top();
 });
 
-
-// activity data page scroll and fixed header function
-// var timer;
-// var fired = false;
-// $(window).scroll(function() {
-//   if(timer) {
-//     window.clearTimeout(timer);
-//   }
-
-//   timer = window.setTimeout(function() {
-//     var table_width = $('.activity-data-table').width();
-//     var table_left_position = $('.activity-data-table').position().left -203;
-//     var column_width_1 = $('.activity-data-table tr:first-child td').attr('colspan');
-//     if  ($(window).scrollTop() >= 330 && fired === false || $(window).scrollLeft() ){
-//       $('.cloned-header').remove();
-//       var cloned_header = $('.activity-data-table thead').clone().addClass('cloned-header');
-//       $(cloned_header).insertAfter('table.activity-data-table').css({ width:table_width }).css("margin-left", 0-$(document).scrollLeft()).delay(1000).removeClass('hidden');
-//       fired = true;
-//     }
-
-//     if  ($(window).scrollTop() <= 329){
-//       $('.cloned-header').remove();
-//       fired = false;
-//     }
-//   }, 10);
-// });
-
 // activity data page scroll and fixed header function
 var timer;
 var fired = false;
@@ -59,26 +32,6 @@ $(window).scroll(function() {
     }
   }, 10);
 });
-
-// var fired = false;
-// $(window).scroll(function(){
-//   console.log('firing');
-//   var table_width = $('.activity-data-table').width();
-//   var table_left_position = $('.activity-data-table').position().left -203;
-//   var column_width_1 = $('.activity-data-table tr:first-child td').attr('colspan');
-//   if  ($(window).scrollTop() >= 330 && fired === false || $(window).scrollLeft() ){
-//       $('.cloned-header').remove();
-//       console.log(table_left_position);
-//       var cloned_header = $('.activity-data-table thead').clone().addClass('cloned-header');
-//       $(cloned_header).insertAfter('table.activity-data-table').css({ width:table_width }).css("margin-left", 0-$(document).scrollLeft()).delay(1000).removeClass('hidden');
-//       fired = true;
-//   }
-
-//   if  ($(window).scrollTop() <= 329){
-//       $('.cloned-header').remove();
-//       fired = false;
-//     }
-// });
 
 function clear_saved_state() {
   console.log('clear');
