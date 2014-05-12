@@ -67,6 +67,13 @@ function insert_manage_users() {
   });
 }
 
+function insert_report() {
+  $('#insert-form').empty();
+  $.get('../report.html', function(data) {
+    $('#insert-form').html(data);
+  });
+}
+
 // function toggle_all_facilities() {
 //  $('#selectAll').click(function(e){
 //     var table= $($(this).target).closest('table');
@@ -202,4 +209,9 @@ function insert_top() {
     $('#insert-top').html(data);
   });
   $('#insert-top').trigger('create');
+}
+
+function check_all_in_table(e) {
+  var table= $(e.target).closest('table');
+  $('td input:checkbox',table).prop('checked',this.checked);
 }

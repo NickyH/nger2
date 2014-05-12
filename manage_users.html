@@ -188,6 +188,165 @@
     </div>
     <!-- end tab row-->
 
+
+
+
+    <!-- modules authorised row -->
+    <div class="row">
+      <div class="col-12">
+        <div class="row-fluid">
+
+          <!-- form panel 1 -->
+          <div class="col-lg-12 col-md-12 col-sm-12">
+
+            <div class="form-panel full-width tab-panel">
+
+              <form class="form-horizontal container" role="form">
+
+                <!-- category table start-->
+                <div class="table-header">
+                  <span>Modules Authorised</span>
+                </div>
+
+                <!-- each searchable table needs unique ID "table-filter-*" -->
+                <table class="table table-condensed user-list-table">
+                  <thead>
+                    <tr>
+                      <th class="tbl-module">Module</th>
+                      <th class="tbl-authorised">Authorised</th>
+                    </tr>
+                  </thead>
+
+                  <tr>
+                    <td><div class="text">NGER</div></td>
+                    <td>
+                      <div class="form-group">
+                        <div class="col-sm-10">
+                          <input type="checkbox" class="form-control">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><div class="text">NGER</div></td>
+                    <td>
+                      <div class="form-group">
+                        <div class="col-sm-10">
+                          <input type="checkbox" class="form-control">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><div class="text">NGER</div></td>
+                    <td>
+                      <div class="form-group">
+                        <div class="col-sm-10">
+                          <input type="checkbox" class="form-control">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                </table>
+                <!-- category table end-->
+
+                </form>
+
+              </div>
+            </div>
+            <!-- end form panel 1 -->
+
+          </div>
+        </div>
+      </div>
+      <!-- end modules authorised row-->
+
+      <!-- modules authorised row -->
+      <div class="row">
+        <div class="col-12">
+          <div class="row-fluid">
+
+            <!-- form panel 1 -->
+            <div class="col-lg-12 col-md-12 col-sm-12">
+
+              <div class="form-panel full-width tab-panel">
+
+                <form class="form-horizontal container" role="form">
+
+                  <!-- category table start-->
+                  <div class="table-header">
+                    <span>Users....</span>
+                  </div>
+
+                  <!-- each searchable table needs unique ID "table-filter-*" -->
+                  <table class="table table-condensed user-list-table">
+                    <thead>
+                      <tr>
+                        <th class="">ID</th>
+                        <th class="">Name</th>
+                        <th class="">Division</th>
+                        <th class="">Business/Region</th>
+                        <th class="tbl-visible"><input type="checkbox" class="form-control" id="select-all-users"></th>
+                      </tr>
+                    </thead>
+
+                    <tr>
+                      <td><div class="text">261</div></td>
+                      <td><div class="text">Snowden Brazil</div></td>
+                      <td><div class="text">Infrasturcture Services</div></td>
+                      <td><div class="text">Snowden Mining</div></td>
+                      <td>
+                        <div class="form-group">
+                          <div class="col-sm-10">
+                            <input type="checkbox" class="form-control">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><div class="text">261</div></td>
+                      <td><div class="text">Snowden Brazil</div></td>
+                      <td><div class="text">Infrasturcture Services</div></td>
+                      <td><div class="text">Snowden Mining</div></td>
+                      <td>
+                        <div class="form-group">
+                          <div class="col-sm-10">
+                            <input type="checkbox" class="form-control">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><div class="text">261</div></td>
+                      <td><div class="text">Snowden Brazil</div></td>
+                      <td><div class="text">Infrasturcture Services</div></td>
+                      <td><div class="text">Snowden Mining</div></td>
+                      <td>
+                        <div class="form-group">
+                          <div class="col-sm-10">
+                            <input type="checkbox" class="form-control">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                  </table>
+                  <!-- category table end-->
+
+
+              </form>
+
+            </div>
+          </div>
+          <!-- end form panel 1 -->
+
+        </div>
+      </div>
+    </div>
+    <!-- end modules authorised row-->
+
+
   </div> <!-- end form container -->
 </div>
 
@@ -198,4 +357,7 @@
   $('ul.nav-tabs.period li a').on('click', toggle_tab_period);
   $('ul.nav-tabs.category li a').on('click', toggle_tab_category);
   $('.time-header').on('click', toggle_time_group);
+
+  $('#select-all-users').on('click', check_all_in_table);
+
 </script>

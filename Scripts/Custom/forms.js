@@ -166,11 +166,11 @@ $('.insert-picker').datetimepicker({
 });
 
 // set today's date for all date fields
-var today_datetime = moment().format('YYYY-MM-DD HH:mm');
-$(".insert-picker").val(today_datetime);
+// var today_datetime = moment().format('YYYY-MM-DD HH:mm');
+// $(".insert-picker").val(today_datetime);
 
-var today_date = moment().format('YYYY-MM-DD');
-$(".insert-date-picker").val(today_date);
+// var today_date = moment().format('YYYY-MM-DD');
+// $(".insert-date-picker").val(today_date);
 
 function calendar_icon_click() {
   $(this).parent().children('.form-control').datetimepicker('show');

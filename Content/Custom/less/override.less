@@ -863,6 +863,11 @@ li.active {
 
 // table styling
 
+input[type=checkbox].form-control {
+  height: 16px !important;
+  margin-top: 12px;
+}
+
 .activity-data-table {
   min-width: 1500px;
   table-layout: fixed;
@@ -1683,4 +1688,18 @@ li.active {
   width: 100%;
   height: 200px;
   border: 1px solid grey;
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 170px;
+  min-height: 900px;
+  iframe {
+    position: absolute;
+    top: 170px;
+    left: 200px;
+    width: 100%;
+    height: 100%;
+  }
 }
