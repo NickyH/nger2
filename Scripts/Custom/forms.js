@@ -6,6 +6,7 @@ $(function(){
   $('.selectpicker').selectpicker({ size: 5 });
   $('.activity-table-search').on('keyup', get_val_table_ID);
   $('.input-group-addon').on('click', calendar_icon_click); //activate calendar on icon click
+  $('.save-button').on('click', warn_save_form);
 });
 
 function toggle_tab_year() {
@@ -94,12 +95,23 @@ function warn_cancel_form() {
   });
 }
 
-function warn_close_form() {
-  bootbox.confirm('This will permanently close off this issue', function (response) {
+function warn_save_form() {
+  bootbox.confirm('To save all changes to this form click "OK"', function (response) {
     if(response) {
-      window.location = '/';
+      show_waiting_dialog();
     }
   });
+}
+
+function show_waiting_dialog() {
+    bootbox.dialog({
+    message: 'Please wait while the form is saving...',
+    closeButton: false
+  });
+}
+
+function close_dialog() {
+  bootbox.hideAll();
 }
 
 function table_search(thisObj, tableID) {
