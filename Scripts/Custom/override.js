@@ -11,6 +11,8 @@ var timer;
 var fired = false;
 $(window).scroll(function() {
     if  ($(window).scrollTop() >= 330 && fired === false || $(window).scrollLeft() ){
+      var ht = $('#table-filter-1').width();
+      $('#dummy-table').width(ht);
       $('#dummy-table').removeClass('hidden');
     }
     if ($(window).scrollLeft() ){
@@ -20,6 +22,43 @@ $(window).scroll(function() {
       $('#dummy-table').addClass('hidden');
     }
 });
+
+$(window).resize(function() {
+  var ht = $('#table-filter-1').width();
+  $('#dummy-table').width(ht);
+});
+
+//switch on below for production code
+
+// activity data page scroll and fixed header function
+// $(window).scroll(function() {
+//     if  ($(window).scrollTop() >= 330 || $(window).scrollLeft() ){
+//         var ht = $('[id^=table-filter-]:first');
+//         if (ht.length) {
+//             $('#dummy-table').width(ht.width());
+//             $('#dummy-table').removeClass('hidden');
+//         }
+//     }
+//     if ($(window).scrollLeft()) {
+//         var dummy = $('#dummy-table');
+//         if (dummy.length) {
+//             dummy.css('left', 320 - $(window).scrollLeft())
+//         }
+//     }
+//     if ($(window).scrollTop() <= 329) {
+//       var dummy = $('#dummy-table');
+//       if (dummy.length) {
+//           dummy.addClass('hidden');
+//       }
+//     }
+// });
+
+// $(window).resize(function() {
+//     var ht = $('[id^=table-filter-]:first');
+//     if (ht.length) {
+//         $('#dummy-table').width(ht.width());
+//     }
+// });
 
 function clear_saved_state() {
   console.log('clear');
